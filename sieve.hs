@@ -7,7 +7,7 @@ primes = sieve [2..]
 sieve (p : xs) = p : sieve [x | x <- xs, x `mod` p > 0]
 -- Matter of fact is a trial division
 
--- trial division explicit
+-- trial division method explicit
 primesT    = 2 : [x | x <- [3..], isprimeT x]
 isprimeT x = all (\p -> x `mod` p > 0) (factorsToTry x)
   where
