@@ -1,5 +1,7 @@
 -- module build from the https://rosettacode.org/wiki/Priority_queue#Haskell
 -- Originally written and optimized by the Paulson code
+
+-- Just Exported the needed functions and data type
 module PriorityQueue(
     PriorityQ(Mt, Br),
     emptyPQ, replaceMinPQ,
